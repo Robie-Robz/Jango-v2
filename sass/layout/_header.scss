@@ -1,0 +1,48 @@
+.header{
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: min-content 1fr repeat(3,min-content);
+    
+    align-items: center;
+    
+    padding: 2rem 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+    &__site-logo{
+        grid-row: 1/-1;
+        grid-column: 1/2;
+        
+        
+        color:black;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        
+    }
+    &__nav{
+        grid-column: 3/4;
+    }
+    &__menu-list{
+        list-style: none;
+        
+        display: grid;
+        grid-template-columns: repeat(4,max-content);
+
+    }
+    &__menu-item{
+
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        text-transform: uppercase;
+        
+        
+    }
+    &__menu-link{
+        display: inline-block;
+        color: $color-text-black;
+        
+        &:hover{
+            color: $color-primary;
+        }
+    }
+}
