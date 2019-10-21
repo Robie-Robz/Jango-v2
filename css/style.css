@@ -15,6 +15,21 @@ body {
   font-weight: 300;
   color: #000000; }
 
+.primary-heading {
+  font-size: 4.8rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; }
+
+.button {
+  background-color: #32c5d2;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: none; }
+
 .header {
   display: grid;
   grid-template-rows: min-content;
@@ -44,3 +59,23 @@ body {
     color: #000000; }
     .header__menu-link:hover {
       color: #32c5d2; }
+
+.hero {
+  height: 76vh;
+  background-image: url("../../img/hero-1.jpg");
+  background-size: cover;
+  position: relative; }
+  .hero__heading {
+    text-transform: uppercase;
+    width: 40%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .hero__button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%); }
