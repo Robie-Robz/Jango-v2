@@ -1,12 +1,12 @@
 .hero{
     height: 76vh;
-    background-image: url('../../img/hero-1.jpg');
+    background-image: url('../img/hero-1.jpg');
     background-size: cover;
     position: relative;
     
     
     &__heading{
-        text-transform: uppercase;
+        
         width: 40%;
         text-align:center;
         color: $color-text-white;
@@ -23,5 +23,26 @@
         bottom: 20%;
         left: 50%;
         transform:translateX(-50%);
+    }
+}
+
+.features{
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+    
+    &__item{
+        
+    }
+    &__icon{
+        color: $color-primary;
+        margin-bottom: 3rem;
+    }
+    &__heading{
+        margin-bottom: 3rem;
+    }
+    &__desc{
+        
     }
 }

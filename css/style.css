@@ -18,7 +18,14 @@ body {
 .primary-heading {
   font-size: 4.8rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.secondary-heading {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .button {
   background-color: #32c5d2;
@@ -62,11 +69,10 @@ body {
 
 .hero {
   height: 76vh;
-  background-image: url("../../img/hero-1.jpg");
+  background-image: url("../img/hero-1.jpg");
   background-size: cover;
   position: relative; }
   .hero__heading {
-    text-transform: uppercase;
     width: 40%;
     text-align: center;
     color: #ffffff;
@@ -79,3 +85,14 @@ body {
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%); }
+
+.features {
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7rem; }
+  .features__icon {
+    color: #32c5d2;
+    margin-bottom: 3rem; }
+  .features__heading {
+    margin-bottom: 3rem; }
