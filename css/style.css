@@ -40,7 +40,8 @@ body {
 .underline {
   height: 0.3rem;
   width: 3rem;
-  background-color: #32c5d2; }
+  background-color: #32c5d2;
+  margin: 2rem 0; }
 
 .header {
   display: grid;
@@ -128,7 +129,9 @@ body {
   .why-jango__figure {
     grid-row: 1/-1;
     grid-column: 2/3;
-    z-index: 1; }
+    z-index: 1;
+    max-width: 35rem;
+    align-self: end; }
   .why-jango__image {
     display: block;
     width: 100%; }
